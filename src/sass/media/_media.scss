@@ -1,0 +1,56 @@
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .promo {
+        background-position: 50%;
+        padding: 15px 0px 87px;
+
+        &__wrapper {
+            margin-top: 70px;
+        }
+
+        &__header {
+            font-size: 37px;
+        }
+
+        &__subheader {
+            font-size: 21px;
+        }
+
+        &__icons {
+            margin-top: 55px;
+        }
+
+        &__icon {
+            width: 100px;
+            font-size: 13px;
+        }
+
+    }
+
+
+    .header {
+        &__logo {
+            width: 220px;
+        }
+    }
+
+    .title {
+        font-size: 27px;
+    }
+
+    .advantages {
+        padding: 63px 0 55px;
+
+        &__wrapper {
+            margin: 55px 0 25px;
+        }
+    }
+
+    .consultation {
+        padding: 70px 0;
+    }
+
+}
