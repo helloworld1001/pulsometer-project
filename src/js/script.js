@@ -3,13 +3,13 @@ $(document).ready(function () {
     speed: 1200,
     // adaptiveHeight: true,
     arrows: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="../img/left-arrow.png"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="../img/right-arrow.png"></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img src="img/left-arrow.png"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="img/right-arrow.png"></button>',
     responsive: [
       {
         breakpoint: 992,
         settings: {
-          dots: true,
+          // dots: true,
           arrows: false,
         },
       },
@@ -30,3 +30,21 @@ $(document).ready(function () {
     ],
   });
 });
+
+//Tiny slider
+
+// const slider = tns({
+//   container: '.carousel__inner',
+//   items: 1,
+//   slideBy: 'page',
+//   autoplay: false,
+//   controls: false,
+//   nav: false,
+// });
+
+// document.querySelector('.prev').addEventListener('click', () => {
+//   slider.goTo('prev');
+// });
+// document.querySelector('.next').addEventListener('click', () => {
+//   slider.goTo('next');
+// });
