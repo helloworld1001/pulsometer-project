@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  //Slider
+
   $('.carousel__inner').slick({
     speed: 1200,
     // adaptiveHeight: true,
@@ -54,22 +56,21 @@ $(document).ready(function () {
 
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
+
+  //Modal
+
+  $('[data-modal=consultation]').on('click', function () {
+    $('.overlay, #consultation').fadeIn('slow');
+  });
+
+  $('.modal__close').on('click', function () {
+    $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+  });
+
+  $('.button_mini').each(function (i) {
+    $(this).on('click', function () {
+      $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+      $('.overlay, #order').fadeIn('slow');
+    });
+  });
 });
-
-//Tiny slider
-
-// const slider = tns({
-//   container: '.carousel__inner',
-//   items: 1,
-//   slideBy: 'page',
-//   autoplay: false,
-//   controls: false,
-//   nav: false,
-// });
-
-// document.querySelector('.prev').addEventListener('click', () => {
-//   slider.goTo('prev');
-// });
-// document.querySelector('.next').addEventListener('click', () => {
-//   slider.goTo('next');
-// });
